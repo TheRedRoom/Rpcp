@@ -1,0 +1,151 @@
+.container {
+  padding: 0 2rem;
+  z-index: 1;
+}
+
+.background {
+  z-index: 0;;
+}
+
+.main {
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  z-index: 1;
+}
+
+.title a {
+  color: #ca2424;
+  text-decoration: none;
+  z-index: 1;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+  text-decoration: underline;
+  z-index: 1;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+  z-index: 1;
+}
+
+.title,
+.description {
+  text-align: center;
+  color: #ffffff;
+  z-index: 1;
+}
+
+.description {
+  margin: 4rem 0;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  z-index: 1;
+}
+
+.code {
+  background: #fafafa;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+    z-index: 1;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+  z-index: 1;
+}
+
+.card {
+  background: #000000;
+  color: #ffffff;
+  border: 2px solid;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+  cursor: pointer;
+  transition: all .5s; 
+  box-shadow: 0.3em 0.3em 0 0 #ca2424, inset 0.3em 0.3em 0 0 #ca2424;
+  z-index: 1;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  color: #ca2424;
+  background-color: #ffffff;
+  border-color: #ca2424;
+  z-index: 1;
+}
+
+.card h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+  z-index: 1;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  z-index: 1;
+}
+
+.logo {
+  height: 1em;
+  margin-left: 0.5rem;
+  z-index: 1;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .card,
+  .footer {
+    border-color: #222;
+  }
+  .code {
+    background: #111;
+  }
+  .logo img {
+    filter: invert(1);
+  }
+}
