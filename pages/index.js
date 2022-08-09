@@ -22,7 +22,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://discord.gg/jVaAgY5CNT">The Red Paws Clup Project</a>
+          Welcome to <a href="https://discord.gg/jVaAgY5CNT">The Red Paws Club Project</a>
         </h1>
 
         <p className={styles.description}>
