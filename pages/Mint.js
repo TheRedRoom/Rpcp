@@ -19,12 +19,9 @@ export default function Mint(){
 
   useEffect(() => {
     getAccounts();
-    if (accounts.length > 0 && loader) {
-
-      setLoader(false); 
-      fetchData()
-    }
-  }, [accounts])
+    setLoader(false); 
+    fetchData()
+  }, [accounts[0]])
 
 
   async function fetchData() {
@@ -55,26 +52,6 @@ export default function Mint(){
 
   const decrementQuantity = () => { 
           quantity - 1 >= 1 && setQuantity(quantity - 1)
-  }
-
-  async function withdrawCommission() {
-    if(typeof window.ethereum !== 'undefined') {
-      const provider = new ethers.providers.Web3Provider(window.ethereum);
-      const signer = provider.getSigner();
-      const contract = new ethers.Contract(address, Contract.abi, signer);
-
-      try {
-        let overrides = {
-          from: accounts[0]
-        }
-        
-        const transaction = await contract.withdrawCommission(overrides);
-        await transaction.wait();
-      }
-      catch(err) {
-        console.log(err);
-      }
-    }
   }
 
   
