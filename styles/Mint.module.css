@@ -1,5 +1,7 @@
 .container {
-  padding: 0 2rem;
+  max-width: 100%;
+  height: auto;
+  background-size: cover;
   z-index: 1;
 }
 
@@ -19,12 +21,7 @@
   z-index: 0;
 }
 
-.container {
-  max-width: 100%;
-  height: auto;
-  background-size: cover;
-  
-}
+
 
 .btn {
   background: var(--color7);
