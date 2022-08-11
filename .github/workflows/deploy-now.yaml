@@ -17,7 +17,7 @@ jobs:
         with:
           api-key: ${{ secrets.IONOS_API_KEY }}
           project: ${{ secrets.IONOS_PROJECT_ID }}
-          service-host: api-eu.ionos.space
+          service-host: api-us.ionos.space
 
       - name: checkout
         if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
@@ -46,6 +46,6 @@ jobs:
         with:
           project: ${{ secrets.IONOS_PROJECT_ID }}
           branch-id: ${{ steps.project.outputs.branch-id }}
-          service-host: api-eu.ionos.space
+          service-host: api-us.ionos.space
           api-key: ${{ secrets.IONOS_API_KEY }}
-          dist-folder: ./
+          dist-folder: out
