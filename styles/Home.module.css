@@ -36,27 +36,27 @@
   z-index: 1;
 }
 
-.title a {
+.titre a {
   color: #ca2424;
   text-decoration: none;
   z-index: 1;
 }
 
-.title a:hover,
-.title a:focus,
-.title a:active {
+.titre a:hover,
+.titre a:focus,
+.titre a:active {
   text-decoration: underline;
   z-index: 1;
 }
 
-.title {
+.titre {
   margin: 0;
   line-height: 1.15;
   font-size: 4rem;
   z-index: 1;
 }
 
-.title,
+.titre,
 .description {
   text-align: center;
   color: #ffffff;

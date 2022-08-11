@@ -2,6 +2,14 @@ import React from "react"
 import Link from "next/link"
 import Head from 'next/head'
 import styles from '../styles/Mint.module.css'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faYoutube,
+  faFacebook,
+  faTwitter,
+  faInstagram,
+  faDiscord
+} from "@fortawesome/free-brands-svg-icons";
 
 export default function About(){
     return(
@@ -32,7 +40,37 @@ export default function About(){
             <h2>Dashboard &rarr;</h2>
             <p>Claim income and more</p>
             </a>
-          </Link></div>
+          </Link>
+          <div className={styles.socials}>
+          <ul>
+            <li>
+          <a href="https://www.facebook.com/TheRPCP" target="_blank" rel="noreferrer">
+            <FontAwesomeIcon icon={faFacebook} />
+          </a>
+          </li >
+          <li>
+          <a href="https://www.instagram.com/theredpawsclubproject/" target="_blank" rel="noreferrer">
+            <FontAwesomeIcon icon={faInstagram} />
+          </a>
+          </li>
+          <li>
+          <a href="https://twitter.com/TheRedPawsClub1" target="_blank" rel="noreferrer">
+            <FontAwesomeIcon icon={faTwitter} />
+          </a>
+          </li>
+          <li>
+          <a href="https://youtu.be/Epj0BA4cMh8" target="_blank" rel="noreferrer">
+            <FontAwesomeIcon icon={faYoutube} />
+          </a>
+          </li>
+          <li>
+          <a href="https://discord.gg/jVaAgY5CNT" target="_blank" rel="noreferrer">
+            <FontAwesomeIcon icon={faDiscord} />
+          </a>
+          </li>
+          </ul>
+          </div>
+          </div>
             <h2 className={styles.title}>About Page</h2>
             <div className={styles.background}>
             <main className={styles.main}>

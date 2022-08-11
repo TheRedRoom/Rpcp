@@ -7,6 +7,14 @@ import InfosAccount from '../Components/InfosAccount';
 import Contract from '../artifacts/contracts/RpcpRaton.sol/RpcpRaton.json';
 import ERC20 from "../artifacts/contracts/ERC20.sol/ERC20.json";
 import styles from '../styles/Mint.module.css';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faYoutube,
+  faFacebook,
+  faTwitter,
+  faInstagram,
+  faDiscord
+} from "@fortawesome/free-brands-svg-icons";
 
 const address = "0xE8627f780224F64358b3aa2DaD3E4C38C6D119F1";
 
@@ -133,7 +141,40 @@ export default function Mint(){
             <h2>Dashboard &rarr;</h2>
             <p>Claim income and more</p>
             </a>
-          </Link></div>
+          </Link>
+          
+          <div className={styles.socials}>
+          <ul>
+            <li>
+          <a href="https://www.facebook.com/TheRPCP" target="_blank" rel="noreferrer">
+            <FontAwesomeIcon icon={faFacebook} />
+          </a>
+          </li >
+          <li>
+          <a href="https://www.instagram.com/theredpawsclubproject/" target="_blank" rel="noreferrer">
+            <FontAwesomeIcon icon={faInstagram} />
+          </a>
+          </li>
+          <li>
+          <a href="https://twitter.com/TheRedPawsClub1" target="_blank" rel="noreferrer">
+            <FontAwesomeIcon icon={faTwitter} />
+          </a>
+          </li>
+          <li>
+          <a href="https://youtu.be/Epj0BA4cMh8" target="_blank" rel="noreferrer">
+            <FontAwesomeIcon icon={faYoutube} />
+          </a>
+          </li>
+          <li>
+          <a href="https://discord.gg/jVaAgY5CNT" target="_blank" rel="noreferrer">
+            <FontAwesomeIcon icon={faDiscord} />
+          </a>
+          </li>
+          </ul>
+          </div>
+          
+                
+        </div>
             <h2 className={styles.title}>Mint Page</h2>
             <section className={styles.hero}>
                         <div className={styles.heroG}>
